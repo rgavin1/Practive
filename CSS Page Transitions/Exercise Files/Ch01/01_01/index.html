@@ -17,6 +17,35 @@
 				margin: 0px 0px 10px 0px;
 				color: #fff;
 				width: 200px;
+				transition: all .5s;
+				position: relative;
+				overflow: hidden;
+			}
+
+			a.btn:hover {
+				background-color: rgba(0,0,0,.4);
+				border-color: #fff;
+				padding-left: 20px;
+				width: 190px;
+				border-top-right-radius: 10px;
+				border-bottom-right-radius: 10px;
+				letter-spacing: 10px;
+				}
+
+			a.btn:after {
+				content: '';
+				display: block;
+				width: 10px;
+				height: 100px;
+				background-color: #fcba68;
+				position: absolute;
+				top: 0px;
+				left: -10px;
+				transition-property: left .5s;
+			}
+
+			a.btn:hover::after {
+				left: 0px;
 			}
 
 		</style>
